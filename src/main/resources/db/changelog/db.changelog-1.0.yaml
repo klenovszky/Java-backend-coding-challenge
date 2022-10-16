@@ -8,19 +8,30 @@ databaseChangeLog:
             columns:
               - column:
                   name: ID
-                  type: int
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
               - column:
                   name: Chdrnum
                   type: char(8)
+                  constraints:
+                    nullable: false
               - column:
                   name: Survalue
                   type: 'double(15,2)'
+                  constraints:
+                    nullable: false
               - column:
                   name: Company
                   type: char(1)
+                  constraints:
+                    nullable: false
               - column:
                   name: Currency
                   type: char(3)
+                  defaultValue: HUF
               - column:
                   name: ValidDate
                   type: char(10)

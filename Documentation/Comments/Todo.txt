@@ -1,3 +1,3 @@
-//todo Not null columns should be set in liquibase config
-//todo Constraints should be added (e.g. primary keys, foreign keys, indexes)
+//todo Database constraints should be added (e.g. foreign keys, indexes)
 //todo Unit tests should be created
+//todo File loading logic should be implemented, e.g. dealing with empty, missing or corrupt files, incremental/full load
