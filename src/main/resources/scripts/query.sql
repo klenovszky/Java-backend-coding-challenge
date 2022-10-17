@@ -3,12 +3,12 @@
 
 select * from surValues;
 
-select * from outpay_header;
+select * from outPayHeader;
 
 select * from policy;
 
 truncate table survalues;
-truncate table outpay_header;
+truncate table outPayHeader;
 truncate table policy;
 
 ----------------------------

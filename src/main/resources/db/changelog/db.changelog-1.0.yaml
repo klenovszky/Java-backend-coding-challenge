@@ -36,23 +36,35 @@ databaseChangeLog:
                   name: ValidDate
                   type: char(10)
         - createTable:
-            tableName: OutPay_Header
+            tableName: OutPayHeader
             columns:
               - column:
                   name: Outpay_Header_ID
-                  type: int
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
               - column:
                   name: Clntnum
                   type: char(8)
+                  constraints:
+                    nullable: false
               - column:
                   name: Chdrnum
                   type: char(8)
+                  constraints:
+                    nullable: false
               - column:
                   name: LetterType
                   type: char(12)
+                  constraints:
+                    nullable: false
               - column:
                   name: PrintDate
                   type: datetime
+                  constraints:
+                    nullable: false
               - column:
                   name: DataID
                   type: char(6)
@@ -109,7 +121,11 @@ databaseChangeLog:
             columns:
               - column:
                   name: ID
-                  type: int
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
               - column:
                   name: Chdrnum
                   type: char(8)
@@ -133,4 +149,4 @@ databaseChangeLog:
                   type: char(5)
               - column:
                   name: MailAddress
-                  type: nvarchar(50)
+                  type: nvarchar(60)
