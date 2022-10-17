@@ -1,3 +1,11 @@
-//todo Not null columns should be set in liquibase config
-//todo Constraints should be added (e.g. primary keys, foreign keys, indexes)
-//todo Unit tests should be created
+//todo Database configuration should be added (e.g. foreign keys, indexes, storage parameters)
+//todo Unit/integration tests should be created
+//todo File loading logic should be implemented
+       - dealing with empty, missing or corrupt files
+       - file sets
+       - incremental/full load
+       - data cleanup
+       - GDPR
+//todo File exchange logic should be implemented
+//todo IFA problems: SurValues.currency field is missing from input file
+                     OutPayHeader.RegDate field is missing from input file
